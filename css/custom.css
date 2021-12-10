@@ -1,0 +1,13 @@
+:root {
+  /* colors */
+  /* https://www.canva.com/colors/color-wheel/print/eabd15+efca43/ */
+  --dominantColor: #eabd15; /* var(--dominantColor) */
+  --secondaryColor: #efca43; /* var(--secondaryColor) */
+  --accentColor: #255402; /* var(--accentColor) */
+
+  /*box shadow*/
+  /*cssmatic*/
+  /*brumm.af/shadows*/
+  /* vertical, horizontal, blur, spread, color+opacity */
+  --boxShadow: 0 0 20px rgba(0, 0, 0, 0.35); /* var(--boxShadow) */
+}

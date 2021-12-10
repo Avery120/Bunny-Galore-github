@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="MTItMy0yMDIxIGF0IDk6NDcgcG0gLSBCdW5ueSBHYWxvcmU="
+    />
+    <title>Bunny Galore</title>
+
+    <!-- JQuery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css"
+      integrity="sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Fancyapp CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
+    <!-- Fancyapp JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- left sidebar offcanvas -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Bunny Galore</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="text-center">
+          <div class="MissionStatement">
+            <img
+              src="images/fancybox/thumbs/Fancybox-(1).jpg"
+              class="cropped-offcavas"
+              alt="MissionStatement"
+            />
+          </div>
+          <br />
+          <blockquote>
+            Here at Bunny Galore we assure to take care of all bunnies and
+            rabbits to help give them new homes across the world. And to make
+            sure their well-being is kept up at all times.
+            <cite>Avery, CEO and leading head of Bunny Galore</cite>
+          </blockquote>
+          <a
+            class="btn btn-outline-primary btn-offcanvas-left"
+            href="https://www.youtube.com/"
+            target="_blank"
+            >Offical Youtube Channel</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom offcanvas -->
+
+    <div
+      class="offcanvas offcanvas-bottom"
+      tabindex="-1"
+      id="offcanvasBottom"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+          Important notice
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body small">
+        <div class="alert alert-danger text-center alert-offcanvas-bottom">
+          <p>
+            <strong>Current Active Users</strong><br />All users are currently
+            registered under safe at this moment.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo section -->
+    <div class="container-fluid top-logo text-center">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <span class="material-icons-outlined material-icon md-60">
+            <a
+              class="sidebar-icon"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasBottom"
+              role="button"
+              aria-controls="offcanvasBottom"
+              >info</a
+            >
+          </span>
+
+          <span class="material-icons-outlined material-icon md-60">
+            description
+          </span>
+
+          <span class="material-icons-outlined material-icon md-60">
+            <a
+              class="sidebar-icon"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              menu
+            </a>
+          </span>
+        </div>
+
+        <div class="col-12 col-md-6">
+          Bunny Galore
+        </div>
+      </div>
+    </div>
+
+    <!-- Navagation  menu -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#staff">Staff</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Volunteer-Form</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success btn-search" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/carousel/Carousel-1.jpg"
+            class="d-block w-100"
+            alt="Care for the most cutest animals on the planet"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Care for the most cutest animals on the planet</h5>
+            <p>
+              Learn how to take care and raise all sorts of rabbits and bunnies.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/carousel/Carousel-2.jpg"
+            class="d-block w-100"
+            alt="Gain experience for the veterinarian career"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Gain experience for the veterinarian career</h5>
+            <p>Use the opprotunity to fuel towards a career.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/carousel/Carousel-3.jpg"
+            class="d-block w-100"
+            alt="An easy and stress free responsibility"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>An easy and stress free responsibility</h5>
+            <p>Volunteer to a welcoming program of care-taking.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="ratio ratio-16x9 carousel-alternate">
+      <iframe
+        src="https://www.youtube.com/embed/N55jtyr8YHM?rel=0"
+        title="YouTube video"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <!-- end of carousel -->
+
+    <!-- Font Awesome -->
+    <div class="container-fluid fa-row text-center">
+      <div class="row">
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://www.patreon.com/" target="_blank">
+            <i class="fas fa-money-bill-alt fa-row-icon"></i>
+          </a>
+
+          <br />Donations
+        </div>
+
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a
+            href="https://myhouserabbit.com/rabbit-care/care-pet-rabbit/"
+            target="_blank"
+          >
+            <i class="fas fa-book fa-row-icon"></i>
+          </a>
+
+          <br />Bunny tips
+        </div>
+
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a
+            href="https://www.petco.com/shop/en/petcostore/category/small-animal/rabbit-shop/rabbit-food"
+            target="_blank"
+          >
+            <i class="fas fa-carrot fa-row-icon"></i>
+          </a>
+
+          <br />Food Shop
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://binkybunny.com/forums/" target="_blank">
+            <i class="fas fa-users fa-row-icon"></i>
+          </a>
+
+          <br />Community Board
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a
+            href="https://www.petfinder.com/search/rabbits-for-adoption/?sort%5B0%5D=recently_added"
+            target="_blank"
+          >
+            <i class="fas fa-paw fa-row-icon"></i>
+          </a>
+
+          <br />Available Pets
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a
+            href="https://www.bluecross.org.uk/pet-advice/rabbit-facts"
+            target="_blank"
+          >
+            <i class="fas fa-clipboard-list fa-row-icon"></i>
+          </a>
+
+          <br />Info-list
+        </div>
+      </div>
+    </div>
+
+    <!-- dummy paragraph contact -->
+    <div class="container contact-div">
+      <div class="row">
+        <div col="col">
+          <img
+            src="images/general/reContact2.jpg"
+            class="img-responsive volunteer-img"
+            alt="Alternate Placeholder"
+          />
+          <h2>Contact Information</h2>
+          <p>
+            Want to get a hold of us for any questions? Or want to know the
+            volunteer criteria/quota? We'er here to answer all your questions
+            the best way possible.
+          </p>
+
+          <p>
+            You can contact us about signing up for volunteering and any other
+            information needed. Like general supplies, tips on care-taking, and
+            overall guide for all queries. Just call 204-565-0124.
+          </p>
+
+          <div>
+            <a href="#footerInfo" class="btn btn-outline-primary btn-contact"
+              >More Information</a
+            >
+          </div>
+        </div>
+        <!-- col -->
+      </div>
+    </div>
+    <!-- container -->
+    <!-- end dummy paragraph volunteer -->
+
+    <!--gallery -->
+    <div class="container text-center">
+      <div class="row">
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/fancybox/originals/(1).jpg">
+            <img
+              data-aos="flip-up"
+              class="img-responsive img-fancybox"
+              src="images/fancybox/thumbs/Fancybox-(1).jpg"
+              alt="Alternate Placeholder"
+            />
+          </a>
+        </div>
+
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/fancybox/originals/(2).jpg">
+            <img
+              data-aos="flip-up"
+              class="img-responsive img-fancybox"
+              src="images/fancybox/thumbs/Fancybox-(2).jpg"
+              alt="Alternate Placeholder"
+            />
+          </a>
+        </div>
+
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/fancybox/originals/(3).jpg">
+            <img
+              data-aos="flip-up"
+              class="img-responsive img-fancybox"
+              src="images/fancybox/thumbs/Fancybox-(3).jpg"
+              alt="Alternate Placeholder"
+            />
+          </a>
+        </div>
+
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/fancybox/originals/(4).jpg">
+            <img
+              data-aos="flip-up"
+              class="img-responsive img-fancybox"
+              src="images/fancybox/thumbs/Fancybox-(4).jpg"
+              alt="Alternate Placeholder"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="row gallery-button">
+        <div class="col-12 text-center">
+          <a class="btn btn-outline-primary btn-gallery" href="gallery.html"
+            >View Gallery</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- end of main page gallery-->
+
+    <!-- dummy paragraph volunteer -->
+    <div class="container volunteer-div">
+      <div class="row">
+        <div col="col">
+          <img
+            src="images/general/reVolunteer.jpg"
+            class="img-responsive volunteer-img"
+            alt="Alternate Placeholder"
+          />
+          <h2>Volunteer</h2>
+          <p>
+            You can volunteer to take care 1 to 2 bunnies and rabbits among 100s
+            to select. Learn and utilize care-taking skills from our program to
+            raise the perfect little fur angels for others or even yourself.
+          </p>
+
+          <p>
+            Not convinced yet? Well here are some good reasons to volunteer.
+            110% start off pay, build a sense of organization, and get to hang
+            out with cute animals during your shifts. Along with becoming a
+            certified entry level pet owner for careers such as veterinarian. So
+            what are you waiting for, volunteer now with the form below.
+          </p>
+
+          <div>
+            <a href="form.html" class="btn btn-outline-primary btn-volunteer"
+              >Volunteer Now</a
+            >
+          </div>
+        </div>
+        <!-- col -->
+      </div>
+    </div>
+    <!-- container -->
+    <!-- end dummy paragraph contact -->
+
+    <!-- staff -->
+    <div class="container staff text-center" id="staff">
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            data-aos="flip-right"
+            src="images/staff/thumbs/Staff-s1.jpg"
+            class="cropped"
+            alt="Alternate Placeholder"
+          />
+          <br />
+
+          <blockquote>
+            I am always one step ahead for the company.
+            <cite>
+              Natus, head planner of Bunny Galore.
+            </cite>
+          </blockquote>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            data-aos="flip-right"
+            src="images/staff/thumbs/Staff-s2.jpg"
+            class="cropped"
+            alt="Alternate Placeholder"
+          />
+          <br />
+
+          <blockquote>
+            These little guys are worth it every second.
+            <cite>
+              Commodi, prime care-taker of Bunny Galore.
+            </cite>
+          </blockquote>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            data-aos="flip-right"
+            src="images/staff/thumbs/Staff-s3.jpg"
+            class="cropped"
+            alt="Alternate Placeholder"
+          />
+          <br />
+
+          <blockquote>
+            No task is too hard for me.
+            <cite>
+              Eaque, executive task manager of Bunny Galore.
+            </cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer-row text-center" id="footerInfo">
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
+        >
+          <a
+            href="https://www.programmablepower.com/about-us/privacy-policy?utm_term=&utm_campaign=2021+Dynamic+Search&utm_source=adwords&utm_medium=ppc&hsa_acc=9448229872&hsa_cam=12614663938&hsa_grp=125539314448&hsa_ad=509333310885&hsa_src=g&hsa_tgt=dsa-19959388920&hsa_kw=&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQiA4b2MBhD2ARIsAIrcB-R93ol2nJsdVfXA0jpujkTcRletwBDcDc5T1C0C43-mCNIXZwFuArEaAnntEALw_wcB"
+            target="_blank"
+            >Privacy Policy</a
+          >
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
+        >
+          <a href="schedule.html" target="_blank">Schedule</a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
+        >
+          <a href="mailto:avery.stewart30@buc.blinn.edu" target="_blank"
+            >avery.stewart30@buc.blinn.edu</a
+          >
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
+        >
+          <a href="form.html" target="_blank">Volunteer</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- social media icons -->
+      <div class="row text-center">
+        <div class="col-12">
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook fa-social-media"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram fa-social-media"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter fa-social-media"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
